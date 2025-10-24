@@ -1,0 +1,18 @@
+[package]
+name = "bam_region_annotator"
+version = "0.1.0"
+edition = "2021"  # 改为2021，因为依赖库都是用的2021版本
+
+[dependencies]
+anyhow = "1.0.100"
+clap = { version = "4.5.49", features = ["derive"] }
+rust-htslib = "0.47.1"  # 升级以匹配工作区其他crate使用的版本
+
+# 内部依赖
+cr_bam = { path = "lib/rust/cr_bam" }
+cr_types = { path = "lib/rust/cr_types" }
+fastq_set = { path = "lib/rust/fastq_set" }
+tx_annotation = { path = "lib/rust/tx_annotation" }
+
+[patch."https://github.com/10XGenomics/fastq_set"]
+fastq_set = { path = "lib/rust/fastq_set" }

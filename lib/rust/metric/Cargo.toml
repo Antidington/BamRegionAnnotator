@@ -1,0 +1,39 @@
+[dependencies]
+serde_derive = '1'
+
+[dependencies.ahash]
+default-features = false
+features = ['std']
+version = '0.8'
+
+[dependencies.anyhow]
+workspace = true
+
+[dependencies.bincode]
+workspace = true
+
+[dependencies.itertools]
+workspace = true
+
+[dependencies.metric_derive]
+path = '../metric_derive'
+
+[dependencies.num-traits]
+workspace = true
+
+[dependencies.serde]
+workspace = true
+
+[dependencies.serde_json]
+workspace = true
+
+[lib]
+test = false
+
+[package]
+authors = ['10x Genomics']
+edition = '2021'
+include = ['src/**/*']
+name = 'metric'
+publish = false
+version = '0.1.0'

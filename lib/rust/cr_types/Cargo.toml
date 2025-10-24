@@ -1,0 +1,96 @@
+[dependencies]
+serde_bytes = '0.11'
+serde_with = '3'
+sha1 = '0.10'
+
+[dependencies.anyhow]
+workspace = true
+
+[dependencies.arrayvec]
+workspace = true
+
+[dependencies.barcode]
+path = '../barcode'
+
+[dependencies.bio]
+workspace = true
+
+[dependencies.csv]
+workspace = true
+
+[dependencies.derive_more]
+workspace = true
+
+[dependencies.fastq_set]
+workspace = true
+
+[dependencies.fxhash]
+workspace = true
+
+[dependencies.itertools]
+workspace = true
+
+[dependencies.lazy_static]
+workspace = true
+
+[dependencies.martian]
+workspace = true
+
+[dependencies.martian-derive]
+workspace = true
+
+[dependencies.martian-filetypes]
+workspace = true
+
+[dependencies.metric]
+path = '../metric'
+
+[dependencies.proc-macro2]
+workspace = true
+
+[dependencies.quote]
+workspace = true
+
+[dependencies.regex]
+workspace = true
+
+[dependencies.serde]
+workspace = true
+
+[dependencies.serde_json]
+workspace = true
+
+[dependencies.shardio]
+workspace = true
+
+[dependencies.slide_design]
+path = '../slide_design'
+
+[dependencies.strum]
+workspace = true
+
+[dependencies.strum_macros]
+workspace = true
+
+[dependencies.thiserror]
+workspace = true
+
+[dependencies.transcriptome]
+path = '../transcriptome'
+
+[dependencies.umi]
+path = '../umi'
+
+[lib]
+test = false
+
+[package]
+authors = ['10x Genomics']
+edition = '2021'
+name = 'cr_types'
+publish = false
+version = '0.1.0'
+
+[package.metadata]
+[package.metadata.cargo-machete]
+ignored = ['serde_bytes']

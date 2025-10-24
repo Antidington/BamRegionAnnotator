@@ -1,0 +1,82 @@
+[[bin]]
+name = 'cellranger'
+test = false
+
+[dependencies]
+dirs = '5'
+shell-escape = '0.1.5'
+terminal_size = '0.3'
+tiff = '0.9.1'
+url = '2.5.2'
+
+[dependencies.anyhow]
+workspace = true
+
+[dependencies.clap]
+default-features = true
+features = ['derive', 'wrap_help']
+workspace = true
+
+[dependencies.cloud_utils]
+path = '../cloud_utils'
+
+[dependencies.cr_types]
+path = '../cr_types'
+
+[dependencies.csv]
+workspace = true
+
+[dependencies.fastq_set]
+workspace = true
+
+[dependencies.hex]
+workspace = true
+
+[dependencies.itertools]
+workspace = true
+
+[dependencies.libc]
+workspace = true
+
+[dependencies.metric]
+path = '../metric'
+
+[dependencies.multi]
+path = '../multi'
+
+[dependencies.ordered-float]
+workspace = true
+
+[dependencies.regex]
+workspace = true
+
+[dependencies.serde]
+workspace = true
+
+[dependencies.serde_json]
+workspace = true
+
+[dependencies.sha2]
+workspace = true
+
+[dependencies.slide_design]
+path = '../slide_design'
+
+[dependencies.tempfile]
+workspace = true
+
+[dependencies.thiserror]
+workspace = true
+
+[dependencies.vdj_reference]
+path = '../vdj_reference'
+
+[lib]
+test = false
+
+[package]
+authors = ['10x Genomics']
+edition = '2021'
+name = 'cr_wrap'
+publish = false
+version = '0.1.0'

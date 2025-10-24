@@ -1,0 +1,66 @@
+[dependencies]
+[dependencies.anyhow]
+workspace = true
+
+[dependencies.barcode]
+path = '../barcode'
+
+[dependencies.bincode]
+workspace = true
+
+[dependencies.cr_h5]
+path = '../cr_h5'
+
+[dependencies.cr_types]
+path = '../cr_types'
+
+[dependencies.diff-exp]
+workspace = true
+
+[dependencies.itertools]
+workspace = true
+
+[dependencies.martian]
+workspace = true
+
+[dependencies.martian-filetypes]
+workspace = true
+
+[dependencies.metric]
+path = '../metric'
+
+[dependencies.ndarray]
+workspace = true
+
+[dependencies.numpy]
+workspace = true
+
+[dependencies.pyanyhow]
+path = '../pyanyhow'
+
+[dependencies.pyo3]
+workspace = true
+
+[dependencies.serde]
+workspace = true
+
+[dependencies.serde_json]
+workspace = true
+
+[dependencies.sprs]
+workspace = true
+
+[dependencies.sqz]
+workspace = true
+
+[lib]
+crate-type = ['staticlib']
+name = 'fast_utils'
+test = false
+
+[package]
+authors = ['10x Genomics']
+edition = '2021'
+name = 'fast_utils'
+publish = false
+version = '0.1.0'

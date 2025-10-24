@@ -1,0 +1,47 @@
+[dependencies]
+[dependencies.anyhow]
+workspace = true
+
+[dependencies.byteorder]
+workspace = true
+
+[dependencies.enclone_proto]
+path = '../enclone_proto'
+
+[dependencies.itertools]
+workspace = true
+
+[dependencies.prost]
+workspace = true
+
+[dependencies.prost-build]
+workspace = true
+
+[dependencies.serde_json]
+workspace = true
+
+[dependencies.sha2]
+workspace = true
+
+[dependencies.vdj_ann]
+path = '../vdj_ann'
+
+[dependencies.vdj_asm_utils]
+default-features = false
+path = '../vdj_asm_utils'
+
+[dependencies.vdj_reference]
+path = '../vdj_reference'
+
+[dependencies.vdj_types]
+path = '../vdj_types'
+
+[lib]
+test = false
+
+[package]
+authors = ['10x Genomics']
+edition = '2021'
+name = 'vdj_proto'
+publish = false
+version = '0.1.0'

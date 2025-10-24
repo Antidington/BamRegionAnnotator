@@ -1,0 +1,17 @@
+[dependencies]
+[dependencies.quote]
+workspace = true
+
+[dependencies.syn]
+workspace = true
+
+[lib]
+proc-macro = true
+test = false
+
+[package]
+authors = ['10x Genomics']
+edition = '2021'
+name = 'metric_derive'
+publish = false
+version = '0.1.0'

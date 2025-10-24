@@ -1,0 +1,97 @@
+[[bin]]
+name = 'cr_ana'
+test = false
+
+[dependencies]
+noisy_float = '0.2'
+
+[dependencies.anyhow]
+workspace = true
+
+[dependencies.bhtsne]
+branch = 'main'
+git = 'https://github.com/10XGenomics/scan-rs'
+
+[dependencies.clap]
+workspace = true
+
+[dependencies.cr_types]
+path = '../cr_types'
+
+[dependencies.diff-exp]
+workspace = true
+
+[dependencies.hclust]
+workspace = true
+
+[dependencies.hdf5]
+workspace = true
+
+[dependencies.hdf5-io]
+branch = 'main'
+git = 'https://github.com/10XGenomics/scan-rs'
+
+[dependencies.itertools]
+workspace = true
+
+[dependencies.leiden]
+branch = 'main'
+git = 'https://github.com/10XGenomics/scan-rs'
+
+[dependencies.log]
+workspace = true
+
+[dependencies.martian]
+workspace = true
+
+[dependencies.martian-derive]
+workspace = true
+
+[dependencies.martian-filetypes]
+workspace = true
+
+[dependencies.ndarray]
+workspace = true
+
+[dependencies.ndarray-npy]
+workspace = true
+
+[dependencies.ndarray-stats]
+workspace = true
+
+[dependencies.num-traits]
+workspace = true
+
+[dependencies.rayon]
+workspace = true
+
+[dependencies.scan-rs]
+branch = 'main'
+git = 'https://github.com/10XGenomics/scan-rs'
+
+[dependencies.scan-types]
+branch = 'main'
+git = 'https://github.com/10XGenomics/scan-rs'
+
+[dependencies.serde]
+workspace = true
+
+[dependencies.sprs]
+workspace = true
+
+[dependencies.sqz]
+workspace = true
+
+[dependencies.umap-rs]
+branch = 'main'
+git = 'https://github.com/10XGenomics/scan-rs'
+
+[lib]
+test = false
+
+[package]
+authors = ['10x Genomics']
+edition = '2021'
+name = 'cr_ana'
+publish = false
+version = '0.1.0'
