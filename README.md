@@ -1,6 +1,16 @@
 # BamRegionAnnotator
 * Add 10X standard `RE` attribute for BAM files
 
+## Build
+
+Use Rust 1.90.0 (pinned in `rust-toolchain.toml`), a C/C++ toolchain,
+CMake, pkg-config, libclang, and Python 3. Dependencies and recovery provenance
+are documented in [DEPENDENCIES.md](DEPENDENCIES.md).
+
+```bash
+cargo build --locked --release
+```
+
 ## Usage
 ```bash
 bam_region_annotator -h
