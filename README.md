@@ -123,3 +123,14 @@ and headers across four parameter configurations, and exercise invalid inputs,
 tag conflicts, output preservation and cleanup. They do not establish identity
 with the unavailable historical dependency source or with a particular
 Cell Ranger release.
+
+## Code layout
+
+`src/main.rs` calls the pipeline. `cli.rs` owns argument parsing and annotation
+parameters; `reference.rs` checks reference dictionaries and alignment bounds;
+`tags.rs` owns tag conflicts and annotation writes; `pipeline.rs` streams records;
+`stats.rs` defines counters and reporting; `bam_io.rs` validates and publishes
+temporary output. Upstream annotation algorithms remain under `lib/rust`.
+
+The obsolete, uncompiled `process_bam.rs` has been removed; use the Cargo binary
+and documented CLI as the single application entry point.
