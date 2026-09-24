@@ -14,7 +14,6 @@ cr_types = { path = "lib/rust/cr_types" }
 fastq_set = { path = "lib/rust/fastq_set" }
 tx_annotation = { path = "lib/rust/tx_annotation" }
 
-[dev-dependencies]
 tempfile = "3.23.0"
 
 [patch."https://github.com/10XGenomics/fastq_set"]

@@ -5,7 +5,9 @@ use std::path::{Path, PathBuf};
 use std::process::{Command, Output};
 
 pub fn fixture(path: &str) -> PathBuf {
-    Path::new(env!("CARGO_MANIFEST_DIR")).join("tests/fixtures").join(path)
+    Path::new(env!("CARGO_MANIFEST_DIR"))
+        .join("tests/fixtures")
+        .join(path)
 }
 
 pub fn input_bam(path: &Path) {
@@ -30,12 +32,21 @@ pub fn read_bam(path: &Path) -> (bam::Header, Vec<bam::Record>) {
 
 pub fn run(input: &Path, output: &Path, args: &[&str]) -> Output {
     Command::new(env!("CARGO_BIN_EXE_bam_region_annotator"))
-        .arg("--reference").arg(fixture("reference"))
-        .arg("--input").arg(input)
-        .arg("--output").arg(output)
-        .args(args).output().unwrap()
+        .arg("--reference")
+        .arg(fixture("reference"))
+        .arg("--input")
+        .arg(input)
+        .arg("--output")
+        .arg(output)
+        .args(args)
+        .output()
+        .unwrap()
 }
 
 pub fn assert_success(result: &Output) {
-    assert!(result.status.success(), "{}", String::from_utf8_lossy(&result.stderr));
+    assert!(
+        result.status.success(),
+        "{}",
+        String::from_utf8_lossy(&result.stderr)
+    );
 }

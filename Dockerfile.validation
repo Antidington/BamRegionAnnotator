@@ -1,0 +1,5 @@
+FROM --platform=linux/amd64 rust:1.90.0-bookworm@sha256:3914072ca0c3b8aad871db9169a651ccfce30cf58303e5d6f2db16d1d8a7e58f
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    cmake libclang-dev pkg-config python3-dev \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /work
