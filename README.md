@@ -12,6 +12,9 @@ and Homebrew `cmake`, `pkg-config`, `llvm` and `python@3.11` provide these tools
 If necessary, set `LIBCLANG_PATH` to the LLVM library directory and
 `PYO3_PYTHON` to the Python executable.
 
+Use a rustup-managed Cargo/Rust toolchain: a standalone Homebrew Cargo does not
+select the version in `rust-toolchain.toml`. Check `rustc --version` before building.
+
 ```bash
 cargo build --locked --release
 cargo test --locked
@@ -116,6 +119,8 @@ records as their denominator and report `0.00%` when there are none. The success
 message is emitted only after publication.
 
 ## Validation scope
+
+Current platform results and limitations are recorded in [VALIDATION.md](VALIDATION.md).
 
 The [synthetic fixtures](tests/fixtures/README.md) capture the original wrapper's
 results using the recovered dependency. Tests compare complete decoded records
