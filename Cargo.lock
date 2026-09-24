@@ -161,6 +161,7 @@ dependencies = [
  "cr_types",
  "fastq_set",
  "rust-htslib",
+ "tempfile",
  "tx_annotation",
 ]
 
